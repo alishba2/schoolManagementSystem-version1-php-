@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./AdminDashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainA">
+            <span>Logo</span>
+            <div class="links">
+                <a href="#">Dashboard</a>
+              <a href="studentManagement.php">Students</a>
+                <a href="teacherManagement.php">Teachers</a>
+                <a href="notifications.php">Notifications</a>
+                <a href="time_table.php">Time Table</a>
+                <a href="#">Created Material</a>
+                <a href="#">Settings</a>
+
+
+
+            </div>
+        </div>
+        <div class="sectionB">
+            <div class="mainB">
+            
+                <div>
+                    <form class="search-form">
+    
+                        <label for="search"><i class="fa fa-search"></i></label>
+                        <input id="search" type="search" pattern=".*\S.*" placeholder="Search.." required>
+    
+                    </form>
+                </div>
+                <div class="notifBar">
+                  <div>
+                    <span><i class="fa fa-envelope"></i></span>
+
+                  </div>
+                  <div class="notification-container">
+                    <span class="notification-icon"><i class="fa fa-bell"></i></span>
+                    <input class="modal-state" id="modal-1" type="checkbox" />
+                    <div class="modal">
+                      <label class="modal-overlay" for="modal-1"></label>
+                      <div class="modal-wrap">
+                        <label class="modal-close" for="modal-1"></label>
+                        <div class="modal-content">
+                          <h2>Notifications</h2>
+                          <ul class="notification-list">
+                            <li>Notification 1</li>
+                            <li>Notification 2</li>
+                            <li>Notification 3</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <span class="user"><i style="border:1px solid black; border-radius: 50%; padding: 10px 13px;" class="fa fa-user"> </i></span>
+
+                  </div>
+                    
+                    
+    
+                </div>
+    
+            </div>
+            <div class="mainC">
+                <div class="card-container">
+               
+                    <div style="background-color: #247291; color: white;" class="card">
+                      <h3>Students</h3>
+                      <p>500</p>
+                    </div>
+                 
+                    <div style="background-color: #d9b650; color: white;" class="card">
+                      <h3>Courses</h3>
+                      <p>101</p>
+                    </div>
+                    <div style="background-color: #a2c11c; color: white;" class="card">
+                      <h3>Quizes</h3>
+                      <p>200</p>
+                    </div>
+                    <div style="background-color: #f67280; color: white;" class="card">
+                      <h3>Events</h3>
+                      <p>15</p>
+                    </div>
+                    <div style="background-color: #9ba6a5; color: white;" class="card">
+                      <h3>Notifications</h3>
+                      <p>40</p>
+                    </div>
+                    <div style="background-color: #a393eb; color: white;" class="card">
+                      <h3>Timetables</h3>
+                      <p>50</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+
+    </div>
+    </div>
+    <script src="./scrip.js"></script>
+</body>
+
+</html>

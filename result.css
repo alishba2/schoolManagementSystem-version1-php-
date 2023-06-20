@@ -1,0 +1,152 @@
+html {
+	line-height: 1;
+}
+body {
+	background-color: #fff;
+	color: #698474;
+	font: 16px arial, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2em;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 20px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 50px;
+	margin-top: 2em;
+	
+}
+.container span{
+	font-size: 30px;
+	color: #698474;
+}
+.container table {
+	margin: 15px 0 0;
+
+}
+.container caption{
+	margin: 0px 0px 30px 0px;
+	font-size: 18px;
+}
+table {
+	/* 
+		border-collapse values are collapse, separate, inherit. by default separate used. you could see the difference between
+		collapse and separate.
+		separate how works: for th, td i set border 2px solid orange, extra 2px added to each th and td.
+		now 4px comes but 2px used for border color, 2px for space between each th, td.
+		collapse how works: i set border 2px for th, td each th and td should have only 2px border. no extra 2px adds to each th, td.
+
+		if i want to give space with the cells, i can use border-spacing property with border-collapse: separate;
+	*/
+	border-collapse: collapse;
+	border-spacing: 4px; /* border-spacing works only if border-collapse is separate */
+	color: #698474;
+	font: 15px/1.4 "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	width: 100%;
+}
+thead {
+	background: #698474;
+	
+	color: #fff;
+}
+tbody tr:nth-child(even) {
+	background: #f0f0f2;
+}
+/* borders cannot be applied to tr elements or table structure elements. we should follow like below code. */
+tfoot tr:last-child td {
+	border-bottom: 1px solid black;
+}
+th,
+td {
+	border: 2px solid #698474;
+	padding: 6px 10px;
+	vertical-align: middle;
+}
+td {
+	border-bottom: 1px solid #cecfd5;
+	border-right: 1px solid #cecfd5;
+	background-color: white;
+}
+td:first-child {
+	border-left: 1px solid #cecfd5;
+}
+.book-title {
+	color: #698474;
+	display: block;
+}
+.item-stock,
+.item-qty {
+	text-align: center;
+}
+.item-price {
+	text-align: right;
+}
+.item-multiple {
+	display: block;
+}
+/* task */
+.task table {
+	margin-bottom: 44px;
+}
+.task a {
+	color: #455d7a;
+	text-decoration: none;
+}
+.task thead {
+	background-color: #f5f5f5;
+
+	color: #698474;
+}
+.task table th, .task table td {
+	border-bottom: 0;
+	border-right: 0;
+}
+.task table td {
+	border-bottom: 1px solid #ddd;
+	background: white;
+}
+.task table th, .task table td {
+	padding-bottom: 22px;
+	vertical-align: top;
+}
+.task tbody tr:nth-child(even) {
+	background: transparent;
+} 
+.task table:last-child {
+	margin-bottom: 0;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 70%; 
+	}
+
+
+}
+@media only screen and (max-device-width: 1024px),
+  (min-device-width: 1025px) {
+  /* your CSS rules for desktop/tablet view */
+  table {
+    width: 90%;
+  }
+
+ 
+}
